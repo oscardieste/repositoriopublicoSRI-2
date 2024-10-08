@@ -1,2 +1,4 @@
 Comproba que a tes a imaxe httpd : En primeiro lugar, debes comprobar se tes a imaxe de Apache (httpd) no teu ordenador. Para iso, executa imaxes docker e comproba se aparece a imaxe httpd. Se non o tes, podes descargalo co comando docker pull httpd.
+
+
 Crea un contenedor de nome 'asir_httpd' : Para crear un contedor chamado 'asir_httpd' e asignarlle o porto 8080 ao 80: Unha vez que teñas descargada a imaxe, podes crear un contedor chamado asir_httpd. Neste contedor, o porto 80 estará vinculado co porto 8080 da túa máquina, o que se fai executando o seguinte comando: docker run -d --name asir_httpd -p 8080:80 -v "$PWD"/htdocs:/usr/local/apache2/htdocs/ httpd. Con este comando, o directorio local htdocs quedará montado dentro do contedor no directorio htdocs de Apache, permitindo que os ficheiros que teñas no teu equipo poidan verse no servidor web.
