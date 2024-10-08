@@ -1,2 +1,1 @@
-# repositoriopublicoSRI-2
-P2 Montando volumenes en apache 
+"Comproba que a tes a imaxe httpd" : En primeiro lugar, debes comprobar se tes a imaxe de Apache (httpd) no teu ordenador. Para iso, executa imaxes docker e comproba se aparece a imaxe httpd. Se non o tes, podes descargalo co comando docker pull httpd.
